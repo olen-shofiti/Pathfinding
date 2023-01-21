@@ -9,6 +9,11 @@ import javax.swing.border.LineBorder;
 
 public class Main {
     public static void main(String[] args) {
+        // Linux/X11 does not automatically apply common fractional desktop scales.
+        if (System.getProperty("os.name", "").toLowerCase(java.util.Locale.ROOT).startsWith("linux")) {
+            System.setProperty("sun.java2d.uiScale", "2.0");
+        }
+
         JFrame frame = new JFrame("Pathfinding");
 
         Pathfinding pathFinding = new Pathfinding();
