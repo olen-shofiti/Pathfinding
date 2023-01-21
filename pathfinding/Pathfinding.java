@@ -26,7 +26,7 @@ import javax.swing.JRadioButton;
 
 /**
  *
- * @author Olen Shofiti email: olenshofiti@gmailcom
+ * @author Olen Shofiti email: olenshofiti@gmail.com
  *
  * The Pathfinding application is a visualization of 4 searching/pathfinding
  * algorithms. Namely, BFS, DFS, A* and GBFS (Greedy Best-First Search) and two
