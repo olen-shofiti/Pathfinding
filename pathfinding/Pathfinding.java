@@ -1,3 +1,4 @@
+package pathfinding;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -52,7 +53,7 @@ public class Pathfinding extends JPanel implements MouseMotionListener, MouseLis
 
     private static ArrayList<Point> obstacles;
     private static boolean flag = true;
-    private static int metric = 0;
+    // private static int metric = 0;
     private static Point start, goal;
     private static JButton solveBtn, gridWithObstaclesBtn, gridWithoutObstaclesBtn;
     private static int nrOfExploredNodes = 0;
@@ -64,7 +65,7 @@ public class Pathfinding extends JPanel implements MouseMotionListener, MouseLis
     private static JRadioButton rdBFS, rdDFS, rdAstar, rdGreedy, rdManhattan, rdEuclidean;
     private static JLabel label;
     private static ButtonGroup groupBtnAlgos, groupBtnDist;
-    private static JPanel radioBtnAlgoPanel, radioBtnDistPanel, mainPanel, buttonsPanel, nodesExploredPanel;
+    public JPanel radioBtnAlgoPanel, radioBtnDistPanel, mainPanel, buttonsPanel, nodesExploredPanel;
     private static PriorityQueue<PriorityQ> frontier;
 
     /**
@@ -858,26 +859,26 @@ public class Pathfinding extends JPanel implements MouseMotionListener, MouseLis
         }
     }
 
-    public static void main(String[] args) {
+    // public static void main(String[] args) {
 
-        JFrame frame = new JFrame("Pathfinding");
+    //     JFrame frame = new JFrame("Pathfinding");
 
-        Pathfinding pathFinding = new Pathfinding();
-        pathFinding.setPreferredSize(new Dimension(600, 600));
+    //     Pathfinding pathFinding = new Pathfinding();
+    //     pathFinding.setPreferredSize(new Dimension(600, 600));
 
-        pathFinding.setBackground(Color.gray);
-        pathFinding.setBorder(new LineBorder(Color.black, 1));
+    //     pathFinding.setBackground(Color.gray);
+    //     pathFinding.setBorder(new LineBorder(Color.black, 1));
 
-        frame.add(pathFinding, BorderLayout.WEST);
+    //     frame.add(pathFinding, BorderLayout.WEST);
 
-        frame.add(mainPanel, BorderLayout.EAST);
-        frame.pack();
+    //     frame.add(mainPanel, BorderLayout.EAST);
+    //     frame.pack();
 
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
+    //     frame.setLocationRelativeTo(null);
+    //     frame.setVisible(true);
 
-        frame.setResizable(false);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    //     frame.setResizable(false);
+    //     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-    }
+    // }
 }
