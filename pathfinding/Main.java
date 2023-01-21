@@ -1,7 +1,5 @@
 package pathfinding;
 
-import pathfinding.*;
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;

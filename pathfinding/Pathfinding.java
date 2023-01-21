@@ -2,7 +2,6 @@ package pathfinding;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Point;
@@ -21,11 +20,9 @@ import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
-import javax.swing.border.LineBorder;
 
 /**
  *
@@ -53,7 +50,6 @@ public class Pathfinding extends JPanel implements MouseMotionListener, MouseLis
 
     private static ArrayList<Point> obstacles;
     private static boolean flag = true;
-    // private static int metric = 0;
     private static Point start, goal;
     private static JButton solveBtn, gridWithObstaclesBtn, gridWithoutObstaclesBtn;
     private static int nrOfExploredNodes = 0;
@@ -858,27 +854,4 @@ public class Pathfinding extends JPanel implements MouseMotionListener, MouseLis
             return 0;
         }
     }
-
-    // public static void main(String[] args) {
-
-    //     JFrame frame = new JFrame("Pathfinding");
-
-    //     Pathfinding pathFinding = new Pathfinding();
-    //     pathFinding.setPreferredSize(new Dimension(600, 600));
-
-    //     pathFinding.setBackground(Color.gray);
-    //     pathFinding.setBorder(new LineBorder(Color.black, 1));
-
-    //     frame.add(pathFinding, BorderLayout.WEST);
-
-    //     frame.add(mainPanel, BorderLayout.EAST);
-    //     frame.pack();
-
-    //     frame.setLocationRelativeTo(null);
-    //     frame.setVisible(true);
-
-    //     frame.setResizable(false);
-    //     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-    // }
 }
